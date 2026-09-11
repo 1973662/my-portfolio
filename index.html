@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">MyPortfolio</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">作品</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 首页/Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">你好，欢迎 👋</p>
+            <h1 class="hero-name">我是 <span class="highlight">你的名字</span></h1>
+            <p class="hero-title">全栈开发者 / UI 设计师</p>
+            <p class="hero-desc">热衷于打造优雅、高效的数字产品，用代码将创意变为现实。</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">查看作品</a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>向下滚动</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 关于 -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="avatar-placeholder">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20avatar%20illustration%20minimalist%20gradient%20background&image_size=square_hd" alt="头像" onerror="this.style.display='none'">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>我是一名拥有多年开发经验的工程师，专注于前端与全栈开发。热爱学习新技术，追求代码的简洁与优雅。</p>
+                    <p>工作之余，喜欢分享技术文章，参与开源社区，也热衷于摄影与旅行，从生活中汲取灵感。</p>
+                    <ul class="about-info">
+                        <li><strong>姓名：</strong>你的名字</li>
+                        <li><strong>地区：</strong>中国 · 上海</li>
+                        <li><strong>邮箱：</strong>hello@example.com</li>
+                        <li><strong>状态：</strong>开放工作机会</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">我的技能</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>前端开发</h3>
+                    <p>HTML / CSS / JavaScript / TypeScript</p>
+                    <p>React / Vue / Next.js</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>后端开发</h3>
+                    <p>Node.js / Python / Go</p>
+                    <p>Express / FastAPI / Gin</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>数据库</h3>
+                    <p>MySQL / PostgreSQL</p>
+                    <p>MongoDB / Redis</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>设计工具</h3>
+                    <p>Figma / Sketch / PS</p>
+                    <p>响应式 / 动效设计</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🚀</div>
+                    <h3>DevOps</h3>
+                    <p>Docker / Kubernetes</p>
+                    <p>CI/CD / Linux</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>其他</h3>
+                    <p>Git / Webpack / Vite</p>
+                    <p>性能优化 / SEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品 -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">精选作品</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20web%20app%20dashboard%20ui%20screenshot%20clean%20interface&image_size=landscape_16_9" alt="项目一" onerror="this.parentElement.classList.add('img-fallback')">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-date"><span class="day">2026</span><span class="ym">09.01</span></div>
+                        <h3>数据分析平台</h3>
+                        <p>基于 React 和 D3.js 的可视化分析系统，支持多维度数据探索。</p>
+                        <div class="project-tags">
+                            <span>React</span><span>D3.js</span><span>Node</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">演示</a>
+                            <a href="#" target="_blank">源码</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20ui%20design%20modern%20gradient%20interface%20screenshot&image_size=landscape_16_9" alt="项目二" onerror="this.parentElement.classList.add('img-fallback')">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-date"><span class="day">2026</span><span class="ym">07.15</span></div>
+                        <h3>移动商城 App</h3>
+                        <p>跨端电商应用，使用 Taro 框架构建，支持微信/支付宝多端。</p>
+                        <div class="project-tags">
+                            <span>Taro</span><span>Vite</span><span>Pinia</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">演示</a>
+                            <a href="#" target="_blank">源码</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=creative%20portfolio%20website%20landing%20page%20minimalist%20aesthetic&image_size=landscape_16_9" alt="项目三" onerror="this.parentElement.classList.add('img-fallback')">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-date"><span class="day">2026</span><span class="ym">05.20</span></div>
+                        <h3>创意作品集</h3>
+                        <p>为设计师打造的个人作品集网站，注重动效与视觉表达。</p>
+                        <div class="project-tags">
+                            <span>Next.js</span><span>GSAP</span><span>Three.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">演示</a>
+                            <a href="#" target="_blank">源码</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p class="contact-subtitle">有项目合作或想法交流？随时联系我</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <input type="text" id="name" placeholder="你的姓名" required>
+                    <input type="email" id="email" placeholder="你的邮箱" required>
+                </div>
+                <input type="text" id="subject" placeholder="主题">
+                <textarea id="message" rows="5" placeholder="留言内容..." required></textarea>
+                <button type="submit" class="btn btn-primary">发送消息</button>
+                <p class="form-feedback" id="formFeedback"></p>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="#" target="_blank" aria-label="掘金">掘金</a>
+                <a href="#" target="_blank" aria-label="知乎">知乎</a>
+                <a href="#" target="_blank" aria-label="邮箱">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>© 2026 你的名字. 用 ❤️ 与代码构建.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
